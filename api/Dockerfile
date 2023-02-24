@@ -1,5 +1,5 @@
 #FROM node:12.13.0-alpine
-FROM public.ecr.aws/samples/nodejs-hello:latest
+FROM public.ecr.aws/docker/library/node:18.14.2-alpine3.17
 WORKDIR /usr/src/app/api
 COPY package*.json ./
 RUN npm install
