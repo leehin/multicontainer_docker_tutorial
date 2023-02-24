@@ -1,5 +1,5 @@
-FROM node:12.7-alpine 
-
+#FROM node:12.7-alpine 
+FROM public.ecr.aws/samples/nodejs-hello:latest
 WORKDIR /usr/src/app/ui
 COPY package*.json ./
 RUN npm cache clean --force
